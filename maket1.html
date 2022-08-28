@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    h2,
+    h4,
+    nav,
+    section,
+    div,
+    img,
+    button,
+    aside,
+    h3,
+    p,
+    footer,
+    h1 {
+      border: 1px solid green;
+    }
+
+    .flexcontainer {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red;
+      justify-content: center;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 40;
+      background-color: yellow;
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+      gap: 100px;
+      flex: 1 1 auto;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .header_content {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    h2 {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
+      font-family: 'Cormorant Upright';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 130%;
+    }
+
+    .article_main {
+      display: flex;
+      flex-direction: column;
+      background-color: darkseagreen;
+      flex: 1 1 auto;
+      gap: 30px;
+      align-content: center;
+    }
+
+    .mainpage_button {
+      background-color: bisque;
+    }
+
+    .img_mainpage {
+      display: flex;
+      flex: 1 1 auto;
+      width: 40%;
+    }
+
+    aside {
+      background-color: darkslategray;
+      order: -2;
+      justify-content: flex-start;
+    }
+
+    .article_mainpage {
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav
+      {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+    }
+
+    section {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 175%;
+    }
+.img_mainpage{
+  width: 700px;
+  height: 900px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="flexcontainer">
+    <header>
+      <h2>GERIGHT</h2>
+      <div class="navigation">
+        <nav href="/cafe.html">Home</nav>
+        <nav href="pages.html">Pages</nav>
+        <nav href="contactus.html">Contact Us</nav>
+        <nav href="Blog.html">Blog</nav>
+        <nav href="landing">Landing</nav>
+      </div>
+      <div class="header_content">
+        <section href="registration.html">Log in/Registration</section>
+        <section href="booking.html">Book a table</section>
+      </div>
+    </header>
+    <main>
+      <article class="article_mainpage">
+        <div class="article_main">
+          <h4>Chase The New Flavour</h4>
+          <h1>The Key To Fine Dining</h1>
+          <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam
+            scelerisque sapien. Et, penatibus aliquam amet tellus</p>
+          <button class="button1"><img src="/Button.jpg" alt="button" style="vertical-align: middle"></button>
+        </div>
+        <img src="/picture.jpg" class="img_mainpage">
+        <aside>
+          <p id="hashtag1" class="hashtag1">#Bar</p>
+          <p id="hashtag2" class="hashtag2">#Geright</p>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <p>contact</p>
+      <p>working hours</p>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
