@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flexcontainer {
+            display: flex;
+            border: 1px solid green;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        header{
+            background-color: rgb(190, 188, 188);
+        }
+
+        .tittle {
+            text-align: center;
+    
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        article {
+            flex: 1 1 auto;
+            flex-direction: column;
+            background-color: rgb(246, 241, 208);
+
+        }
+
+        aside {
+            flex: 1 1 auto;
+            text-align: center;
+            background-color: rgb(184, 246, 208);
+            padding-top: 20px;
+        }
+
+        .main_section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .main_a {
+            text-align: center;
+        }
+
+        .main_b,
+        .main_c {
+            width: 45%;
+        }
+        section{
+            background-color: rgb(255, 217, 0);
+            padding: 10px 0;
+        }
+
+        .main_d {
+            width: calc(90% + 20px);
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color:  rgb(190, 188, 188);
+        }
+
+        nav {
+            width: 20%;
+            text-align: center;
+            margin: 10px 0;
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="flexcontainer">
+        <header>
+            <h1 class="tittle">Заголовок</h1>
+        </header>
+        <main>
+            <article>
+                <p class="main_a">Основная часть</p>
+                <div class="main_section">
+                    <section class="main_b">Еще 1</section>
+                    <section class="main_c">Еще 2</section>
+                    <section class="main_d">Еще 3</section>
+                </div>
+            </article>
+            <aside class="aside">Боковая область</aside>
+        </main>
+        <footer>
+            <nav class="footer_a"> Секция футера</nav>
+            <nav class="footer_b">Секция футера</nav>
+            <nav class="footer_c">Секция футера</nav>
+            <nav class="footer_d">Секция футера</nav>
+        </footer>
+    </div>
+</body>
+
+</html>
